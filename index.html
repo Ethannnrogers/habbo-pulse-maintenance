@@ -18,46 +18,102 @@
         <a class="navbar-brand" href="#">
             <img src="img/hplogo.png" id="logo" alt="Habbo-Pulse">
         </a>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <!-- Navigation Tabs -->
+        <div class="collapse navbar-collapse" id="nav-max">
             <div class="navbar-nav">
+                <!-- Home Tab -->
                 <a class="nav-item nav-link" href="#">
                     <i class="fas fa-smile-beam nav-icon"></i>
                     <br>
                     Home
                 </a>
+                <!-- About Tab -->
                 <a class="nav-item nav-link" href="#">
                     <i class="fas fa-smile-beam nav-icon"></i>
                     <br>
                     About
                 </a>
+                <!-- News Tab -->
                 <div class="nav-link" id="dropdown-hover">
                     <i class="fas fa-smile-beam nav-icon"></i>
                     <br>
                     News
+                    <!-- Dropdown Menu -->
                     <div id="dropdown-menu">
                         <div class="container">
                             <div class="row">
-                                <div class="col dropdown-menu-item">
-                                    <a class="">Category</a>
-                                </div>
+                                <a href="#" class="col dropdown-menu-item">
+                                    Category
+                                </a>
                             </div>
                             <div class="row">
-                                <div class="col dropdown-menu-item">
-                                    <a class="">Category</a>
-                                </div>
+                                <a href="#" class="col dropdown-menu-item">
+                                    Category
+                                </a>
                             </div>
                             <div class="row">
-                                <div class="col dropdown-menu-item last-dropdown">
-                                    <a class="">Category</a>
-                                </div>
+                                <a href="#" class="col dropdown-menu-item last-dropdown">
+                                    Category
+                                </a>
+                            </div>
+                        </div>
+                    </div> <!-- Dropdown Menu -->
+                </div> <!-- Section Tabs -->
+            </div>
+        </div> <!-- Navigation Tabs -->
+
+        <!-- Mobile Menu Button -->
+        <div id="mobile-menu">
+            <div class="burger-item"></div>
+            <div class="burger-item"></div>
+            <div class="burger-item"></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-nav">
+        <div class="container">
+            <div class="row">
+                <a href="#" class="col mobile-menu-item">
+                    Home
+                <a>
+            </div>
+            <div class="row">
+                <a class="col mobile-menu-item">
+                    About
+                </a>
+            </div>
+            <div class="row">
+                <div class="col mobile-menu-item" id="mobile-dropdown-hover">
+                    News
+                    <div id="mobile-dropdown-menu">
+                        <div class="container">
+                            <div class="row">
+                                <a href="#" class="col mobile-dropdown-menu-item">
+                                    Category
+                                </a>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="col mobile-dropdown-menu-item">
+                                    Category
+                                </a>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="col mobile-dropdown-menu-item">
+                                    Category
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
 
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="logic/navigation.js"></script>
 
     
 </body>

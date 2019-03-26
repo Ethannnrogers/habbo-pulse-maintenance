@@ -6,6 +6,9 @@ body {
     background-color: lightblue;
 }
 
+a:hover {
+    text-decoration: none;
+}
 
 
 /* Navigation */
@@ -25,13 +28,13 @@ nav {
 }
 
 #logo {
-    height: 6.5vh;
+    height: 50px;
     width: auto;
 }
 
 .nav-item {
     height: 78px;
-    color: black!important;
+    color: lightgrey!important;
     width: 12vw;
     text-align: center;
     font-weight: bold;
@@ -72,7 +75,7 @@ nav {
     border-top: 1px solid rgb(233, 233, 233);
     text-align: center;
     padding-top: 5px;
-    color:black;
+    color:lightgrey;
     -webkit-transition: background-color .2s, border-top .2s;
 }
 
@@ -89,7 +92,7 @@ nav {
 
 #dropdown-hover {
     height: 78px;
-    color: black!important;
+    color: lightgrey!important;
     width: 12vw;
     text-align: center;
     font-weight: bold;
@@ -106,5 +109,96 @@ nav {
     display: block;
 }
 
+#mobile-menu {
+    display: none;
+    margin-bottom: 3px;
+}
+
+.burger-item {
+    height: 7px;
+    width: 40px;
+    background-color: lightgrey;
+    margin-top: 6px;
+    border-radius: 10px;
+}
 
 /* Navigation */
+
+/* Mobile Navigation */
+
+#mobile-nav {
+   width: 90vw!important; 
+   height: auto;
+   background-color: rgb(250, 250, 250);
+   margin-left: 5%;
+   margin-top: 1%;
+   border-radius: 10px;
+   box-shadow: 2px 3px rgba(128, 128, 128, 0.1);
+   -webkit-box-shadow: 2px 3px rgba(128, 128, 128, 0.1);
+   -moz-box-shadow: 2px 3px rgba(128, 128, 128, 0.1);
+}
+
+.mobile-menu-item {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    color:lightgrey!important;
+}
+
+.mobile-menu-item:hover {
+    color: gold!important;
+    -webkit-transition: color .2s;
+}
+
+#mobile-dropdown-menu {
+    width: 20vw;
+    height: auto;
+    background-color: rgb(250, 250, 250);
+    display: none;
+    margin-left: 55%;
+    box-shadow: 2px 3px rgba(128, 128, 128, 0.1);
+   -webkit-box-shadow: 2px 3px rgba(128, 128, 128, 0.1);
+   -moz-box-shadow: 2px 3px rgba(128, 128, 128, 0.1);
+}
+
+#mobile-dropdown-hover:hover #mobile-dropdown-menu {
+    display: block;
+}
+
+.mobile-dropdown-menu-item {
+    width: 12vw;
+    height: 40px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 5px;
+    color:lightgrey;
+    -webkit-transition: background-color .2s, border-top .2s;
+}
+
+.mobile-dropdown-menu-item:hover {
+    color: gold!important;
+    -webkit-transition: background-color .2s, color .2s;
+
+}
+
+/* Mobile Navigation */
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 991px) {
+    #nav-max {
+        display: none;
+    }
+    #mobile-menu {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    #mobile-nav {
+        display: none;
+    }
+}
+/* Media Queries */
