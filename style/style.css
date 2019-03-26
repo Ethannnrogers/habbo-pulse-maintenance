@@ -44,7 +44,7 @@ nav {
 }
 
 .nav-item:hover {
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(241, 241, 241);
     border-top: 2px solid darkorange;
     color: gold!important;
     -webkit-transition: background-color .2s, border-top .2s,color .2s;
@@ -83,7 +83,7 @@ nav {
 }
 
 .dropdown-menu-item:hover {
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(241, 241, 241);
     border-top: 2px solid darkorange;
     color: gold!important;
     -webkit-transition: background-color .2s, border-top .2s, color .2s;
@@ -99,7 +99,7 @@ nav {
 }
 
 #dropdown-hover:hover {
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(241, 241, 241);
     border-top: 2px solid darkorange;
     color: gold!important;
     -webkit-transition: background-color .2s, border-top .2s,color .2s;
