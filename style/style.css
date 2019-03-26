@@ -1,0 +1,92 @@
+body { 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+
+
+
+/* Navigation */
+
+nav {
+    background-color: rgb(250, 250, 250);
+    width: 90%;
+    height: 80px;
+    margin-top: 4vh;
+    margin-left: 5%;
+    border-radius: 10px;
+    border-top: 2px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    box-shadow: 2px 3px rgba(128, 128, 128, 0.1);
+    -webkit-box-shadow: 2px 3px rgba(128, 128, 128, 0.1);
+    -moz-box-shadow: 2px 3px rgba(128, 128, 128, 0.1);
+}
+
+#logo {
+    height: 6.5vh;
+    width: auto;
+}
+
+.nav-item {
+    height: 78px;
+    color: darkblue!important;
+    width: 12vw;
+    text-align: center;
+    font-weight: bold;
+    border-left: 1px solid rgb(233, 233, 233);
+}
+
+.last-nav-item {
+    border-right: 1px solid rgb(233, 233, 233);
+}
+
+.nav-item:hover {
+    background-color: rgb(233, 233, 233);
+    border-top: 2px solid green;
+    -webkit-transition: background-color .2s, border-top .2s;
+}
+
+.nav-icon {
+    font-size: 2em;
+    font-weight: normal; /* comment this line of code out if Font Awesome Icons are not displaying normaly. */
+}
+
+#dropdown-menu {
+    width: 12vw;
+    height: auto;
+    background-color: rgb(250, 250, 250);
+    display: none;
+    margin-left: -10px;
+    margin-top: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdown-menu-item {
+    width: 12vw;
+    height: 40px;
+    font-weight: normal;
+    border-top: 1px solid rgb(233, 233, 233);
+    text-align: center;
+    padding-top: 5px;
+}
+
+.last-dropdown:hover {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdown-menu-item:hover {
+    background-color: rgb(233, 233, 233);
+    border-top: 2px solid green;
+    -webkit-transition: background-color .2s, border-top .2s;
+}
+
+#dropdown-hover:hover #dropdown-menu {
+    display: block;
+}
+
+
+/* Navigation */
