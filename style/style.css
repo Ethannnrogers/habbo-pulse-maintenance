@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: lightblue;
+    padding-bottom: 20px;
 }
 
 a:hover {
@@ -22,9 +23,9 @@ nav {
     border-radius: 10px;
     border-top: 2px solid lightgrey;
     border-bottom: 1px solid lightgrey;
-    box-shadow: 2px 3px rgba(128, 128, 128, 0.1);
-    -webkit-box-shadow: 2px 3px rgba(128, 128, 128, 0.1);
-    -moz-box-shadow: 2px 3px rgba(128, 128, 128, 0.1);
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.3);
+    -webkit-box-shadow: 0 0 5px rgba(128, 128, 128, 0.3);
+    -moz-box-shadow:  0 0 5px rgba(128, 128, 128, 0.3);
 }
 
 #logo {
@@ -58,12 +59,17 @@ nav {
 }
 
 #dropdown-menu {
+    position: relative;
+    z-index: 1000;
     width: 12vw;
     height: auto;
     background-color: rgb(250, 250, 250);
     display: none;
     margin-left: -10px;
     margin-top: 10px;
+    box-shadow: 2px 3px rgba(128, 128, 128, 0.1);
+    -webkit-box-shadow: 2px 3px rgba(128, 128, 128, 0.1);
+    -moz-box-shadow: 2px 3px rgba(128, 128, 128, 0.1);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -141,7 +147,7 @@ nav {
 .mobile-menu-item {
     text-align: center;
     width: 100%;
-    height: 40px;
+    height: 50px;
     padding-top: 5px;
     color:lightgrey!important;
 }
@@ -179,11 +185,65 @@ nav {
 .mobile-dropdown-menu-item:hover {
     color: gold!important;
     -webkit-transition: background-color .2s, color .2s;
+}
 
+.mobile-nav-icon {
+    font-size: 1.5em;
+    font-weight: normal; /* comment this line of code out if Font Awesome Icons are not displaying normaly. */
+    padding-top: 5px;
 }
 
 /* Mobile Navigation */
 
+/* Content Area */
+
+.content-box {
+    background-color: rgb(250, 250, 250);
+    height: 1%;
+    border-radius: 10px;
+    font-size: .8em;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.4);
+    -webkit-box-shadow: 0 0 5px rgba(128, 128, 128, 0.4);
+    -moz-box-shadow: 0 0 5px rgba(128, 128, 128, 0.4);
+}
+
+#content-area {
+    margin-top: 5%;
+}
+
+#content-right {
+    margin-left: 8%;
+}
+
+/* Content Area */
+
+/* Content Boxes */
+
+/* .content-small {
+    height: 60px;
+    border-radius: 8px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.4);
+    -webkit-box-shadow: 0 0 5px rgba(128, 128, 128, 0.4);
+    -moz-box-shadow: 0 0 5px rgba(128, 128, 128, 0.4);
+}
+
+.avatar-pic {
+    height: 60px;
+    width: 60px;
+    margin-left: -30%;
+    float: left;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.av-name {
+    padding-left: 10px;
+    padding-top: 20px!important;
+} */
+
+/* Content Boxes */
 
 
 /* Media Queries */
@@ -193,6 +253,10 @@ nav {
     }
     #mobile-menu {
         display: block;
+    }
+    #content-right {
+        margin: 0;
+        margin-top: 5%;
     }
 }
 
